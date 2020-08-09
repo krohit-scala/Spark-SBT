@@ -18,9 +18,9 @@ object HelloSpark extends Serializable {
     logger.info(s"Hello Spark program started at: ${startTime}")
 
     // For hardcoding the SparkConf object with properties
-    val sparkConf = new SparkConf
-    sparkConf.setAppName("Hello Spark")
-    sparkConf.setMaster("local")
+    // val sparkConf = new SparkConf
+    // sparkConf.setAppName("Hello Spark")
+    // sparkConf.setMaster("local")
 
     val spark = SparkSession.builder
       .config(getSparkConfObject)
